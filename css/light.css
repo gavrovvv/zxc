@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Sofia+Sans+Extra+Condensed:ital,wght@0,200;0,800;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    height: 100px;
+    width: 98%;
+    background: linear-gradient(rgb(255, 57, 255), rgb(151, 7, 151));
+    background-position: 0 0;
+    border-radius: 30px;
+    border: 10px solid white;
+    animation: background 2.5s infinite alternate;
+    display: flex;
+    color: white;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+
+
+}
+
+@keyframes background {
+    50% {
+        background: blue;
+        box-shadow: 0 -140px 70px -120px mediumorchid inset,
+            0 -210px 70px -120px teal inset,
+            0 -280px 70px -120px plum inset;
+    }
+}
+
+header>h1 {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+.navbar {
+    display: flex;
+    margin-top: 5px;
+    height: 30px;
+    width: 260px;
+    text-align: center;
+    column-gap: 10px;
+    flex-direction: column;
+}
+
+a {
+    color: white;
+}
+
+.navv {
+    gap: 10px;
+}
+
+ul li {
+    display: inline;
+    font-size: 35px;
+    display: flex;
+    gap: 10px;
+
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+}
+
+.nav_text:hover {
+    font-size: 45px;
+    transition: 0.5s 0.5ms;
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+.go-top {
+    position: fixed;
+    left: 20px;
+    top: 90%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    cursor: pointer;
+    padding: 15px 10px;
+    display: none;
+    color: red;
+}
+
+.go-top--show {
+    display: block;
+}
+
+.go-top:hover {
+    border: 1px solid rgba(0, 51, 153, 0.8);
+    background-color: rgba(0, 51, 153, 0.15);
+}
+
+.go-top--show {
+    display: block;
+}
+
+.vertbar {
+    width: 100px;
+    height: 130px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 25px;
+    margin-left: 15px;
+
+}
+
+.vertbar_1 {
+    font-size: 25px;
+    color: black;
+    font-family: 'Tilt Prism', cursive;
+    list-style-type: none;
+
+}
+
+img {
+    height: 35px;
+    width: 35px;
+}
+
+
+.darkk {
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+}
+
+
+body>.scroll-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.scrll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 35px;
+    /* border: 1px solid black; */
+}
+
+.scroll-1 {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
+
+
+    /* border: 1px solid black; */
+
+    overflow-y: scroll;
+    /* Добавляем полосы прокрутки */
+    width: 600px;
+    /* Ширина блока */
+    height: 350px;
+    /* Высота блока */
+    padding: 5px;
+    /* Поля вокруг текста */
+    gap: 25px;
+    align-items: center;
+    /* margin-top: 5px;
+    padding-top: 5px; */
+    box-shadow: 0px 0px 45px purple;
+    background-color: rgb(173, 123, 219);
+}
+
+.scrll p {
+    font-size: 45pt;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    text-decoration: underline;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 400px;
+    width: 550px;
+    border-radius: 25px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    /* margin-left: 30px; */
+    margin-top: 15px;
+
+}
+
+.block img {
+    height: 250px;
+    width: 100%;
+    border-radius: 25px;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+body>.scrll {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scrll form {
+    display: flex;
+    flex-direction: column;
+}
+
+form>input {
+    width: 150px;
+}
+
+.scrll button {
+    width: 150px;
+}
+
+.scrll a{
+    color: black;
+}
+.aud a {
+    color: black;
+}
+
+audio{
+    width: 500px;
+}
+
+.kishlak {
+    overflow-y: scroll;
+    height: 450px;
+    width: 800px;
+    background-color: rgb(226, 61, 226);
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    transition: 0.5s;
+}
+
+.kishlak h1{
+    font-size: 25px;
+}
+
+.kishlak img{
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+#closeBtn{
+    width: 15px;
+    float: right;
+    background-color: red;
+}
+
+.kishlak p{
+    text-decoration: none;
+    font-size: 45px;
+}
+
+#ptext{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+#ptext a{
+    text-decoration: underline;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
